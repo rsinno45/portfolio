@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll Website</title>
+    <link rel="stylesheet" href="rportfolio.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#snake" class="navbar__links" id="snake-page"
+              >Snake Game</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="#calculator" class="navbar__links" id="calc-page"
+              >Calculator</a
+            >
+          </li>
+          <li class="navbar__btn">
+            <a href="#resume" class="button" id="resume-dl">Download Resume</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <h1 class="hero__heading">Aspiring Front End<span> Developer</span></h1>
+        <p class="hero__description">Check out some of my projects!</p>
+        <button class="main__btn"><a href="#snake">Explore</a></button>
+      </div>
+    </div>
+    <div class="main" id="snake">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>This is my first project!</h1>
+          <h2>Snake Game</h2>
+          <p>This was built using HTML, CSS, and Javascript</p>
+          <button class="main__btn">
+            <a href="snakefinal.html">Play Now!</a>
+          </button>
+        </div>
+        <div class="main__img--container">
+          <div class="main__img--card" id="card-2">
+            <i style="font-size: 250px" class="fa">&#xf11b;</i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="services" id="calculator">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>Calorie Calculator</h1>
+          <h2>Used primarily in my personal training business</h2>
+          <p>
+            This helped me figure out how many calories my clients needed to
+            reach their goals
+          </p>
+          <button class="main__btn">
+            <a href="calc.html">Try it out!</a>
+          </button>
+        </div>
+        <div class="main__img--container">
+          <div class="main__img--card" id="card-2">
+            <i class="fa fa-calculator" style="font-size: 250px"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main" id="resume">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>Check Out My Resume Below!</h1>
+          <h2>I am always open to new opportunities</h2>
+          <p>Reach out to me through Email or Linkedin!</p>
+          <button class="main__btn">
+            <a
+              href="Software Dev Resume 2022.pdf"
+              download="Software Dev Resume 2022"
+              >Download Resume</a
+            >
+          </button>
+        </div>
+        <div class="main__img--container">
+          <div class="main__img--card" id="card-2">
+            <img src="grad.jpg" class="personal__pic" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Social Media</h2>
+            <a href="https://www.linkedin.com/in/rsinno/">Linkedin</a>
+            <a href="https://github.com/rsinno45">Github</a>
+          </div>
+        </div>
+      </div>
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo">Rakan</a>
+          </div>
+          <p class="website__rights">© Sinno Inc. 2022. All rights reserved</p>
+          <div class="social__icons">
+            <a
+              href="https://www.linkedin.com/in/rsinno/"
+              class="social__icon--link"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/rsinno45" class="social__icon--link"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="rportfolio.js"></script>
+  </body>
+</html>

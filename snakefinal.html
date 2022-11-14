@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      * {
+        font-family: "Kumbh Sans", sans-serif;
+        background-color: #131313;
+      }
+      .snakesnake {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+      }
+
+      .board {
+        border: 3px solid #000000;
+        display: block;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .returnHome {
+        font-size: 1.8rem;
+        background: #833ab4;
+        background: -webkit-linear-gradient(
+          to right,
+          #fcb045,
+          #fd1d1d,
+          #833ab4
+        );
+        background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+        padding: 20px 60px;
+        border: none;
+        border-radius: 4px;
+        margin-top: 2rem;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.35s;
+        outline: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .returnHome a {
+        position: relative;
+        z-index: 2;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .returnHome:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #ff1ead;
+        transition: all 0.35s;
+        border-radius: 4px;
+      }
+
+      .returnHome:hover {
+        color: #fff;
+      }
+
+      .returnHome:hover:after {
+        width: 100%;
+      }
+
+      .hometag {
+        background-color: transparent;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <script src="snake.js"></script>
+  </head>
+  <body>
+    <h1 class="snakesnake">Snake</h1>
+    <canvas id="board" class="board"></canvas>
+    <button class="returnHome">
+      <a href="rportfolio.html" class="hometag">Return to Home Page</a>
+    </button>
+  </body>
+</html>

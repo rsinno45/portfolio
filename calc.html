@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="calc.css" />
+    <script src="calc.js"></script>
+  </head>
+  <body>
+    <div class="back">
+      <h1>Figure out your BMR today!</h1>
+      <div class="genderstyle">
+        <label
+          >Female:
+          <input
+            id="female"
+            type="radio"
+            name="gender"
+            onchange="calsPerDay()"
+          />
+        </label>
+        <label
+          >Male:
+          <input
+            id="male"
+            type="radio"
+            name="gender"
+            onchange="calsPerDay()"
+            checked
+          />
+        </label>
+      </div>
+      <div class="ageStyle">
+        <label
+          >Age:
+          <input id="age" type="number" oninput="calsPerDay()" value="50" />
+          years
+        </label>
+      </div>
+      <div class="heightStyle">
+        <label
+          >Height:
+          <input id="height" type="number" oninput="calsPerDay()" value="70" />
+          in inches
+        </label>
+      </div>
+      <div class="weightStyle">
+        <label
+          >Weight:
+          <input id="weight" type="number" oninput="calsPerDay()" value="225" />
+          in pounds
+        </label>
+      </div>
+      <div class="BMRstyle">
+        <label>
+          Base metabolic rate: <span id="totalCals"></span> kcal per day
+        </label>
+      </div>
+    </div>
+    <button class="returnHome">
+      <a href="rportfolio.html" class="hometag">Return to Home Page</a>
+    </button>
+  </body>
+</html>
